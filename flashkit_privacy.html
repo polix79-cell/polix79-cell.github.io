@@ -24,17 +24,17 @@
 <body>
 <main>
 <h1>Flashkit — Privacy Policy &amp; Terms</h1>
-<p class="muted">Last updated: 30 September 2026 · App: Flashkit (Android package <code>com.radrest.flashcapture</code>)</p>
+<p class="muted">Last updated: 1 October 2026 · App: Flashkit (Android package <code>com.radrest.flashcapture</code>)</p>
 <nav><a href="#en">English</a><a href="#tr">Türkçe</a></nav>
 
 <section id="en">
 <h2>Summary</h2>
-<p>Flashkit does not require an account. Your documents, photos, videos, voice recordings, transcripts, subtitles and translations are processed on your device and are <strong>never uploaded to us or to anyone else</strong>. The only data that leaves your device is described below: advertising (Google AdMob), app analytics and a small credit record (Google Firebase), purchases (Google Play / Apple) and plain file downloads of language, speech and voice models.</p>
+<p>Flashkit does not require an account. Your documents, photos, videos, voice recordings, transcripts, subtitles and translations are processed on your device and are <strong>never uploaded to us or to anyone else</strong>, except your voice when you choose online speech recognition or turn on Flashkit Plus Translator (see below). The only data that leaves your device is described below: advertising (Google AdMob), app analytics and a small credit record (Google Firebase), purchases (Google Play / Apple) and plain file downloads of language, speech and voice models.</p>
 
 <h2>1. What stays on your device</h2>
 <ul>
   <li><strong>Camera</strong> — used only while you scan a document or a QR code. Images are stored in the app's own storage or saved to your gallery when you choose to.</li>
-  <li><strong>Microphone</strong> — used only in the voice translator, only while you hold the talk button. The recording is converted to text on your device and the temporary audio file is deleted right after. Conversation history is kept in memory only while the screen is open.</li>
+  <li><strong>Microphone</strong> — used only in the voice translator, only while you hold the talk button. By default the recording is converted to text on your device and the temporary audio file is deleted right after. Conversation history is kept in memory only while the screen is open.</li>
   <li><strong>Photos and videos you pick</strong> — used for video creation, automatic subtitles and the background remover. Processing happens on your device; results are saved to your gallery only when you save them.</li>
   <li><strong>Text recognition, translation, speech recognition, subtitles, natural voice and background removal</strong> all run on your device.</li>
   <li><strong>Settings and counters</strong> (for example your chosen languages and the voice translator's daily time) are stored locally on your device.</li>
@@ -51,8 +51,12 @@
   <li><strong>Cloud Firestore — credits.</strong> To keep your credit balance, we store a record containing a device identifier (the Android ID on Android; a random ID on iOS), your credit balance, whether the one-time Synapto reward was claimed, and the record's creation time. Nothing else is stored in it.</li>
 </ul>
 <p>See the <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</p>
+<h3>Online speech recognition — Google (optional)</h3>
+<p>In the voice translator you can turn on <em>Online recognition (Google)</em>. It is off by default. When it is on and you are online, your voice is sent, while you hold the talk button, to your phone's speech recognition service (Google) only to be converted to text; Flashkit itself does not receive or store the audio. Google processes it under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Without internet, or when you turn it off, speech recognition runs on your device as described above.</p>
+<h3>Flashkit Plus Translator (optional)</h3>
+<p>Flashkit Plus Translator is an optional feature of the voice translator (a free 15-minute trial, then a subscription). It is off until you turn it on. While it is on and you are online, the recording you make by holding the talk button is sent to our server, which runs on Cloudflare's network (Cloudflare Workers AI), to be converted to text and translated; the text and the translation are sent back to your phone. <strong>The audio, the text and the translation are not stored</strong> on the server after the result is returned and are not used for anything else. To count your trial and daily usage and to check your subscription, the server keeps only: your device's identifier (the same one used for credits), the number of seconds of speech used, and, if you subscribe, a record of your Google Play subscription (a fingerprint of the purchase token and its expiry date). A Firebase App Check token is sent with each request so the server can confirm it is talking to the genuine app. Without internet, or when you turn it off, the voice translator works on your device as described above.</p>
 <h3>Purchases — Google Play / Apple</h3>
-<p>Flashkit Pro (monthly, yearly or lifetime) is sold through Google Play or the App Store. Payment is handled entirely by the store; we never receive your payment details. The app asks the store whether you own Pro.</p>
+<p>Flashkit Pro (monthly, yearly or lifetime) and Flashkit Plus Translator (monthly or yearly) are sold through Google Play or the App Store. Payment is handled entirely by the store; we never receive your payment details. The app asks the store whether you own Pro; for Flashkit Plus Translator our server asks Google Play whether your subscription is active.</p>
 <h3>Model and file downloads</h3>
 <p>Some features download files the first time you use them: speech recognition models, translation language packs and models, natural voice files and fonts. They are downloaded from our download server (Cloudflare), Hugging Face, GitHub/jsDelivr and Google (ML Kit). These are plain downloads: only standard request information such as your IP address is seen by those servers, and none of your content is sent.</p>
 <h3>Synapto</h3>
@@ -65,7 +69,7 @@
 <ul>
   <li>You can deny camera or microphone permission; only the related feature stops working.</li>
   <li>You can reset your advertising ID or opt out of personalized ads in your device settings.</li>
-  <li>To delete your credit record, email us from the app's contact address; we will delete it. Uninstalling the app removes everything stored on your device.</li>
+  <li>To delete your credit record or your Flashkit Plus Translator usage record, email us from the app's contact address; we will delete it. Uninstalling the app removes everything stored on your device.</li>
 </ul>
 
 <h2>5. Terms for AI features</h2>
@@ -96,15 +100,15 @@
 
 <section id="tr" class="lang">
 <h1>Flashkit — Gizlilik Politikası ve Koşullar</h1>
-<p class="muted">Son güncelleme: 30 Eylül 2026</p>
+<p class="muted">Son güncelleme: 1 Ekim 2026</p>
 
 <h2>Özet</h2>
-<p>Flashkit hesap açmanızı istemez. Belgeleriniz, fotoğraf ve videolarınız, ses kayıtlarınız, konuşma metinleriniz, altyazılarınız ve çevirileriniz cihazınızda işlenir ve <strong>bize ya da başka birine asla yüklenmez</strong>. Cihazdan çıkan veriler yalnızca aşağıda anlatılanlardır: reklam (Google AdMob), uygulama analitiği ve küçük bir kredi kaydı (Google Firebase), satın almalar (Google Play / Apple) ve dil, konuşma ve ses modellerinin düz dosya indirmeleri.</p>
+<p>Flashkit hesap açmanızı istemez. Belgeleriniz, fotoğraf ve videolarınız, ses kayıtlarınız, konuşma metinleriniz, altyazılarınız ve çevirileriniz cihazınızda işlenir ve <strong>bize ya da başka birine asla yüklenmez</strong>; tek istisna, çevrimiçi konuşma tanımayı seçtiğinizde ya da Flashkit Plus Çevirmen'i açtığınızda sesinizdir (aşağıya bakın). Cihazdan çıkan veriler yalnızca aşağıda anlatılanlardır: reklam (Google AdMob), uygulama analitiği ve küçük bir kredi kaydı (Google Firebase), satın almalar (Google Play / Apple) ve dil, konuşma ve ses modellerinin düz dosya indirmeleri.</p>
 
 <h2>1. Cihazınızda kalanlar</h2>
 <ul>
   <li><strong>Kamera</strong> — yalnızca belge ya da QR kod tararken kullanılır. Görüntüler uygulamanın kendi alanında tutulur ya da siz seçerseniz galeriye kaydedilir.</li>
-  <li><strong>Mikrofon</strong> — yalnızca sesli çevirmende, konuş düğmesini basılı tuttuğunuz sürece kullanılır. Kayıt cihazınızda metne çevrilir, geçici ses dosyası hemen silinir. Konuşma geçmişi yalnızca ekran açıkken bellekte tutulur.</li>
+  <li><strong>Mikrofon</strong> — yalnızca sesli çevirmende, konuş düğmesini basılı tuttuğunuz sürece kullanılır. Varsayılan olarak kayıt cihazınızda metne çevrilir, geçici ses dosyası hemen silinir. Konuşma geçmişi yalnızca ekran açıkken bellekte tutulur.</li>
   <li><strong>Seçtiğiniz fotoğraf ve videolar</strong> — video oluşturma, otomatik altyazı ve arka plan silme için kullanılır; işlem cihazınızda yapılır, sonuç yalnızca siz kaydettiğinizde galeriye kaydedilir.</li>
   <li><strong>Metin tanıma, çeviri, konuşma tanıma, altyazı, doğal ses ve arka plan silme</strong> cihazınızda çalışır.</li>
   <li><strong>Ayarlar ve sayaçlar</strong> (seçtiğiniz diller, sesli çevirmenin günlük süresi gibi) cihazınızda saklanır.</li>
@@ -121,8 +125,12 @@
   <li><strong>Cloud Firestore — krediler.</strong> Kredi bakiyenizi tutmak için bir kayıt saklarız: cihaz kimliği (Android'de Android ID, iOS'ta rastgele bir kimlik), kredi bakiyesi, tek seferlik Synapto ödülünün alınıp alınmadığı ve kaydın oluşturulma zamanı. Başka hiçbir şey saklanmaz.</li>
 </ul>
 <p>Ayrıntı: <a href="https://firebase.google.com/support/privacy">Firebase gizlilik bilgileri</a>.</p>
+<h3>Çevrimiçi konuşma tanıma — Google (isteğe bağlı)</h3>
+<p>Sesli çevirmende <em>Çevrimiçi tanıma (Google)</em> seçeneğini açabilirsiniz; varsayılan olarak kapalıdır. Açıkken ve internet varken sesiniz, konuş düğmesini basılı tuttuğunuz sürece, yalnızca metne çevrilmek için telefonunuzun konuşma tanıma hizmetine (Google) gönderilir; Flashkit sesi almaz ve saklamaz. Google bu sesi <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>'na göre işler. İnternet yokken ya da seçeneği kapattığınızda konuşma tanıma yukarıda anlatıldığı gibi cihazınızda çalışır.</p>
+<h3>Flashkit Plus Çevirmen (isteğe bağlı)</h3>
+<p>Flashkit Plus Çevirmen, sesli çevirmenin isteğe bağlı bir özelliğidir (15 dakikalık ücretsiz deneme, sonra abonelik). Siz açana kadar kapalıdır. Açıkken ve internet varken, konuş düğmesini basılı tutarak yaptığınız kayıt metne çevrilmek ve çevrilmek üzere Cloudflare ağında çalışan sunucumuza (Cloudflare Workers AI) gönderilir; metin ve çeviri telefonunuza geri gönderilir. <strong>Ses, metin ve çeviri, sonuç döndükten sonra sunucuda saklanmaz</strong> ve başka hiçbir amaçla kullanılmaz. Deneme ve günlük kullanımınızı saymak ve aboneliğinizi denetlemek için sunucu yalnızca şunları tutar: cihazınızın kimliği (kredilerde kullanılanla aynı), kullanılan konuşma süresi (saniye) ve abone olursanız Google Play aboneliğinizin kaydı (satın alma jetonunun parmak izi ve bitiş tarihi). Sunucunun gerçek uygulamayla konuştuğunu doğrulayabilmesi için her istekle bir Firebase App Check jetonu gönderilir. İnternet yokken ya da özelliği kapattığınızda sesli çevirmen yukarıda anlatıldığı gibi cihazınızda çalışır.</p>
 <h3>Satın almalar — Google Play / Apple</h3>
-<p>Flashkit Pro (aylık, yıllık ya da ömür boyu) Google Play veya App Store üzerinden satılır. Ödemeyi tamamen mağaza yapar; ödeme bilgileriniz bize hiçbir zaman ulaşmaz. Uygulama yalnızca mağazaya Pro'ya sahip olup olmadığınızı sorar.</p>
+<p>Flashkit Pro (aylık, yıllık ya da ömür boyu) ve Flashkit Plus Çevirmen (aylık ya da yıllık) Google Play veya App Store üzerinden satılır. Ödemeyi tamamen mağaza yapar; ödeme bilgileriniz bize hiçbir zaman ulaşmaz. Uygulama mağazaya Pro'ya sahip olup olmadığınızı sorar; Flashkit Plus Çevirmen için sunucumuz aboneliğinizin etkin olup olmadığını Google Play'e sorar.</p>
 <h3>Model ve dosya indirmeleri</h3>
 <p>Bazı özellikler ilk kullanımda dosya indirir: konuşma tanıma modelleri, çeviri dil paketleri ve modelleri, doğal ses dosyaları ve yazı tipleri. Bunlar indirme sunucumuzdan (Cloudflare), Hugging Face, GitHub/jsDelivr ve Google'dan (ML Kit) iner. Bunlar düz indirmelerdir: bu sunucular yalnızca IP adresi gibi standart istek bilgilerini görür; içeriğinizden hiçbir şey gönderilmez.</p>
 <h3>Synapto</h3>
@@ -135,7 +143,7 @@
 <ul>
   <li>Kamera ya da mikrofon iznini vermeyebilirsiniz; yalnızca ilgili özellik çalışmaz.</li>
   <li>Reklam kimliğinizi cihaz ayarlarından sıfırlayabilir ya da kişiselleştirilmiş reklamları kapatabilirsiniz.</li>
-  <li>Kredi kaydınızın silinmesi için bize e-posta gönderin; sileriz. Uygulamayı kaldırmak cihazınızdaki her şeyi siler.</li>
+  <li>Kredi kaydınızın ya da Flashkit Plus Çevirmen kullanım kaydınızın silinmesi için bize e-posta gönderin; sileriz. Uygulamayı kaldırmak cihazınızdaki her şeyi siler.</li>
 </ul>
 
 <h2>5. Yapay zekâ özellikleri için koşullar</h2>
